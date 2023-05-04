@@ -1,0 +1,370 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bankingcontainer {
+  padding: 0 8rem;
+}
+
+.minicontainer {
+  padding: 0 2rem;
+}
+
+.activeborder {
+  border-bottom: 1px solid #7C7C7C;
+}
+
+.activecoloredborder {
+  border-bottom: 1px solid #FF6400;
+}
+
+.activeborder360 {
+  border: 1px solid #FF6400 !important;
+}
+
+.activedot {
+  background-color: #FF6400 !important;
+}
+
+#scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+#scrollbar::-webkit-scrollbar-thumb {
+  background-color: #FF6400;
+}
+
+.internetbanking {
+  background-image: url(https://online.unibank.az/ibank/resources/imgs/icons/bg-login.png);
+}
+.internetbanking header .allside {
+  padding-top: 5rem;
+}
+.internetbanking header .langside a {
+  text-decoration: none;
+  color: #7C7C7C;
+  font-size: 14px;
+  font-family: semiboldpro;
+  margin-left: 0.5rem;
+  padding: 4px;
+  transition: 0.5s;
+}
+.internetbanking header .langside a:hover {
+  background-color: #000000;
+}
+.internetbanking .commonpage {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.internetbanking .commonpage .leftpage {
+  width: 49.9%;
+}
+.internetbanking .commonpage .leftpage .bankingpage {
+  width: 100%;
+  height: 500px !important;
+  overflow: hidden;
+  position: relative;
+}
+.internetbanking .commonpage .leftpage .bankingpage .bannerpage {
+  width: 100%;
+  height: 500px !important;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.internetbanking .commonpage .leftpage .bankingpage .bannerpage .banner {
+  background-color: #F8F8F8;
+  padding: 6rem;
+  border-radius: 6px;
+  box-shadow: 10px 10px 33px 0 rgba(0, 0, 0, 0.15);
+}
+.internetbanking .commonpage .leftpage .bankingpage .bannerpage .banner .bannerimg {
+  width: 100%;
+}
+.internetbanking .commonpage .leftpage .bankingpage .bannerpage .banner .bannerimg img {
+  width: 100%;
+  box-shadow: 10px 10px 33px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+.internetbanking .commonpage .leftpage .bankingpage .bannerpage .banner .context {
+  margin-top: 2rem;
+}
+.internetbanking .commonpage .leftpage .bankingpage .bannerpage .banner .context h4 {
+  color: #3E3E3E;
+  font-size: 20px;
+  font-family: boldpro;
+}
+.internetbanking .commonpage .leftpage .bankingpage .bannerpage .banner .context p {
+  color: #9B9B9B;
+  font-size: 16px;
+  font-family: regularpro;
+  width: 90%;
+}
+.internetbanking .commonpage .leftpage .changer {
+  width: 100%;
+  padding: 5rem 0;
+  background-color: #F8F8F8;
+  margin-bottom: 5rem;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.internetbanking .commonpage .leftpage .changer span {
+  padding: 8px;
+  background-color: rgba(175, 168, 168, 0.55);
+  border-radius: 100%;
+  margin: 0 0.1rem;
+  cursor: pointer;
+}
+.internetbanking .commonpage .rightpage {
+  width: 49.9%;
+  height: 676px;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+}
+.internetbanking .commonpage .rightpage h3 {
+  margin-top: 5rem;
+}
+.internetbanking .commonpage .rightpage h3 span {
+  font-size: 18px;
+  color: #3F3F3F;
+  font-family: boldpro;
+}
+.internetbanking .commonpage .rightpage h3 a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #000000;
+  font-family: semiboldpro;
+  border-bottom: 1px solid #000000;
+}
+.internetbanking .commonpage .rightpage .logparams .left {
+  position: relative;
+}
+.internetbanking .commonpage .rightpage .logparams .left img {
+  width: 85%;
+  position: absolute;
+  left: -8%;
+}
+.internetbanking .commonpage .rightpage .logparams .right {
+  margin-top: 2rem;
+}
+.internetbanking .commonpage .rightpage .logparams .right button {
+  display: block;
+  width: 100%;
+  height: 70px;
+  margin-bottom: 1.5rem;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.internetbanking .commonpage .rightpage .logparams .right button i {
+  font-size: 24px;
+  margin-right: 1rem;
+  color: #7C7C7C;
+  position: absolute;
+  left: 74%;
+}
+.internetbanking .commonpage .rightpage .logparams .right button span {
+  font-size: 15px;
+  color: #000000;
+  font-family: regularpro;
+  font-family: sans-serif;
+}
+.internetbanking .commonpage .rightpage p {
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: #F3F3F3;
+}
+.internetbanking .commonpage .rightpage p i {
+  margin-right: 10px;
+  color: #808080;
+  cursor: pointer;
+}
+.internetbanking .commonpage .rightpage p span {
+  font-size: 16px;
+  font-family: regularpro;
+  color: #808080;
+}
+.internetbanking .commonpage .rightpage form {
+  position: relative;
+}
+.internetbanking .commonpage .rightpage form input {
+  width: 100%;
+  outline-style: none;
+  font-size: 18px;
+  color: #6F6F6F;
+  font-family: regularpro;
+  border: none;
+  padding: 0.3rem 3rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.internetbanking .commonpage .rightpage form span {
+  font-family: sans-serif;
+  font-size: 14px;
+  margin-left: 2rem;
+  color: #FF6400;
+}
+.internetbanking .commonpage .rightpage form .code {
+  width: 50%;
+  padding: 0.3rem 4rem;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+.internetbanking .commonpage .rightpage form .user {
+  position: absolute;
+  top: 20%;
+  left: 2%;
+  font-size: 22px;
+  color: #808080;
+}
+.internetbanking .commonpage .rightpage form .warning {
+  position: absolute;
+  top: 20%;
+  left: 95%;
+  font-size: 22px;
+  color: #808080;
+}
+.internetbanking .commonpage .rightpage form .lock {
+  position: absolute;
+  top: 62%;
+  left: 2%;
+  font-size: 22px;
+  color: #808080;
+}
+.internetbanking .commonpage .rightpage form .pin {
+  position: absolute;
+  top: 105%;
+  left: 0;
+  z-index: 1;
+}
+.internetbanking .commonpage .rightpage form a {
+  font-size: 16px;
+  color: #808080;
+  position: absolute;
+  top: 110%;
+  left: 72%;
+}
+.internetbanking .commonpage .rightpage form button {
+  width: 100%;
+  background-color: #FF6400;
+  padding: 0.6rem;
+  border-radius: 5px;
+  border: 1px solid #FF6400;
+  position: absolute;
+  top: 145%;
+  left: 0;
+  text-align: start;
+}
+.internetbanking .commonpage .rightpage form button .enterance {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-family: regularpro;
+}
+.internetbanking .commonpage .rightpage form button i {
+  color: #FFFFFF;
+  font-size: 20px;
+  position: absolute;
+  top: 30%;
+  left: 90%;
+}
+
+@media (max-width: 576px) {
+  .bankingcontainer {
+    padding: 0 1rem !important;
+  }
+  .minicontainer {
+    padding: 0 0.8rem !important;
+  }
+  .banner {
+    padding: 6rem 1rem !important;
+  }
+  .context h4 {
+    font-size: 18px !important;
+  }
+  .context p {
+    font-size: 14px !important;
+  }
+  .minicontainer form span {
+    margin-left: 0rem !important;
+  }
+  .rightpage h3 span {
+    font-size: 14px !important;
+  }
+  .rightpage h3 a {
+    font-size: 14px !important;
+  }
+  .rightpage p {
+    padding: 5px !important;
+  }
+  .rightpage p i {
+    font-size: 14px !important;
+    margin-right: 5px !important;
+  }
+  .rightpage p span {
+    font-size: 12px !important;
+  }
+  .right #firstbtn {
+    margin-top: 100px !important;
+    margin-left: -109px;
+  }
+  .logparams img {
+    width: 208px !important;
+    height: 100px !important;
+  }
+  .logparams .right {
+    margin-top: 1.5rem !important;
+  }
+  .logparams .right button {
+    height: 60px !important;
+  }
+  .logparams .right #secondbtn {
+    position: absolute;
+    width: 20%;
+    bottom: 43%;
+  }
+  .logparams .right i {
+    display: none;
+  }
+  .logparams .right span {
+    font-size: 16px !important;
+  }
+  .user {
+    font-size: 20px !important;
+  }
+  .warning {
+    left: 90% !important;
+    font-size: 20px !important;
+  }
+  .lock {
+    font-size: 20px !important;
+  }
+  .code {
+    padding: 0.3rem 0.4rem 0.3rem 2.8rem !important;
+  }
+  form input {
+    padding: 0.3rem 2rem !important;
+  }
+  form img {
+    width: 50px;
+  }
+  form a {
+    font-size: 13px !important;
+    width: 55% !important;
+    left: 55% !important;
+    top: 113% !important;
+  }
+  form button {
+    width: 180px !important;
+    margin-top: 1rem !important;
+    margin-left: 2.2rem !important;
+  }
+  form button i {
+    top: 33% !important;
+    left: 80% !important;
+  }
+}/*# sourceMappingURL=banking.css.map */

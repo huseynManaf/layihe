@@ -1,0 +1,457 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bankingcontainer {
+    padding: 0 8rem;
+}
+
+.minicontainer {
+    padding: 0 2rem;
+}
+
+.activeborder {
+    border-bottom: 1px solid #7C7C7C;
+}
+
+.activecoloredborder {
+    border-bottom: 1px solid #FF6400;
+}
+
+.activeborder360 {
+    border: 1px solid #FF6400 !important;
+}
+
+.activedot {
+    background-color: #FF6400 !important;
+}
+
+#scrollbar::-webkit-scrollbar {
+    width: 5px;
+}
+
+#scrollbar::-webkit-scrollbar-thumb {
+    background-color: #FF6400;
+}
+
+.internetbanking {
+    background-image: url(https://online.unibank.az/ibank/resources/imgs/icons/bg-login.png);
+
+    header {
+        .allside {
+            padding-top: 5rem;
+        }
+
+        .langside {
+            a {
+                text-decoration: none;
+                color: #7C7C7C;
+                font-size: 14px;
+                font-family: semiboldpro;
+                margin-left: 0.5rem;
+                padding: 4px;
+                transition: 0.5s;
+
+                &:hover {
+                    background-color: #000000;
+                }
+            }
+        }
+    }
+
+    .commonpage {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+
+        .leftpage {
+            width: 49.9%;
+
+            .bankingpage {
+                width: 100%;
+                height: 500px !important;
+                overflow: hidden;
+                position: relative;
+
+                .bannerpage {
+                    width: 100%;
+                    height: 500px !important;
+                    overflow: hidden;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+
+                    .banner {
+                        background-color: #F8F8F8;
+                        padding: 6rem;
+                        border-radius: 6px;
+                        box-shadow: 10px 10px 33px 0 rgba(0, 0, 0, .15);
+
+                        .bannerimg {
+                            width: 100%;
+
+                            img {
+                                width: 100%;
+                                box-shadow: 10px 10px 33px 0 rgba(0, 0, 0, .15);
+                                border-radius: 10px;
+                            }
+                        }
+
+                        .context {
+                            margin-top: 2rem;
+
+                            h4 {
+                                color: #3E3E3E;
+                                font-size: 20px;
+                                font-family: boldpro;
+                            }
+
+                            p {
+                                color: #9B9B9B;
+                                font-size: 16px;
+                                font-family: regularpro;
+                                width: 90%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .changer {
+                width: 100%;
+                padding: 5rem 0;
+                background-color: #F8F8F8;
+                margin-bottom: 5rem;
+                border-bottom-left-radius: 6px;
+                border-bottom-right-radius: 6px;
+
+                span {
+                    padding: 8px;
+                    background-color: rgba(175, 168, 168, .55);
+                    border-radius: 100%;
+                    margin: 0 0.1rem;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .rightpage {
+            width: 49.9%;
+            height: 676px;
+            background-color: #FFFFFF;
+            border-radius: 6px;
+
+            h3 {
+                margin-top: 5rem;
+
+                span {
+                    font-size: 18px;
+                    color: #3F3F3F;
+                    font-family: boldpro;
+                }
+
+                a {
+                    text-decoration: none;
+                    font-size: 18px;
+                    color: #000000;
+                    font-family: semiboldpro;
+                    border-bottom: 1px solid #000000;
+                }
+            }
+
+            .logparams {
+                .left {
+                    position: relative;
+
+                    img {
+                        width: 85%;
+                        position: absolute;
+                        left: -8%;
+                    }
+                }
+
+                .right {
+                    margin-top: 2rem;
+
+                    button {
+                        display: block;
+                        width: 100%;
+                        height: 70px;
+                        margin-bottom: 1.5rem;
+                        background-color: transparent;
+                        border-radius: 5px;
+                        border: 1px solid rgba(0, 0, 0, .3);
+
+                        i {
+                            font-size: 24px;
+                            margin-right: 1rem;
+                            color: #7C7C7C;
+                            position: absolute;
+                            left: 74%;
+                        }
+
+                        span {
+                            font-size: 15px;
+                            color: #000000;
+                            font-family: regularpro;
+                            font-family: sans-serif;
+
+                        }
+                    }
+                }
+            }
+
+            p {
+                margin-top: 0.5rem;
+                border-radius: 5px;
+                padding: 5px 10px;
+                background-color: #F3F3F3;
+
+                i {
+                    margin-right: 10px;
+                    color: #808080;
+                    cursor: pointer;
+                }
+
+                span {
+                    font-size: 16px;
+                    font-family: regularpro;
+                    color: #808080;
+                }
+            }
+
+            form {
+                position: relative;
+
+                input {
+                    width: 100%;
+                    outline-style: none;
+                    font-size: 18px;
+                    color: #6F6F6F;
+                    font-family: regularpro;
+                    border: none;
+                    padding: 0.3rem 3rem;
+                    border-bottom: 1px solid rgba(0, 0, 0, .3);
+                }
+
+                span {
+                    font-family: sans-serif;
+                    font-size: 14px;
+                    margin-left: 2rem;
+                    color: #FF6400;
+                }
+
+                .code {
+                    width: 50%;
+                    padding: 0.3rem 4rem;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                }
+
+                .user {
+                    position: absolute;
+                    top: 20%;
+                    left: 2%;
+                    font-size: 22px;
+                    color: #808080;
+                }
+
+                .warning {
+                    position: absolute;
+                    top: 20%;
+                    left: 95%;
+                    font-size: 22px;
+                    color: #808080;
+                }
+
+                .lock {
+                    position: absolute;
+                    top: 62%;
+                    left: 2%;
+                    font-size: 22px;
+                    color: #808080;
+                }
+
+                .pin {
+                    position: absolute;
+                    top: 105%;
+                    left: 0;
+                    z-index: 1;
+                }
+
+                a {
+                    font-size: 16px;
+                    color: #808080;
+                    position: absolute;
+                    top: 110%;
+                    left: 72%;
+                }
+
+                button {
+                    width: 100%;
+                    background-color: #FF6400;
+                    padding: 0.6rem;
+                    border-radius: 5px;
+                    border: 1px solid #FF6400;
+                    position: absolute;
+                    top: 145%;
+                    left: 0;
+                    text-align: start;
+
+                    .enterance {
+                        color: #FFFFFF;
+                        font-size: 20px;
+                        font-family: regularpro;
+                    }
+
+                    i {
+                        color: #FFFFFF;
+                        font-size: 20px;
+                        position: absolute;
+                        top: 30%;
+                        left: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .bankingcontainer {
+        padding: 0 1rem !important;
+    }
+
+    .minicontainer {
+        padding: 0 0.8rem !important;
+    }
+
+    .banner {
+        padding: 6rem 1rem !important;
+    }
+
+    .context {
+        h4 {
+            font-size: 18px !important;
+        }
+
+        p {
+            font-size: 14px !important;
+        }
+    }
+    .minicontainer{
+        form{
+            span{
+                margin-left: 0rem!important;
+            }
+        }
+    }
+
+    .rightpage {
+        h3 {
+            span {
+                font-size: 14px !important;
+            }
+
+            a {
+                font-size: 14px !important;
+            }
+        }
+
+        p {
+            padding: 5px !important;
+
+            i {
+                font-size: 14px !important;
+                margin-right: 5px !important;
+            }
+
+            span {
+                font-size: 12px !important;
+            }
+        }
+    }
+    .right{
+        #firstbtn{
+            margin-top: 100px!important;
+            margin-left: -109px;
+        }
+    }
+
+    .logparams {
+        img {
+            width: 208px !important;
+            height: 100px !important;
+        }
+
+        .right {
+            margin-top: 1.5rem !important;
+
+            button {
+                height: 60px !important;
+               
+            }
+            #secondbtn{
+                position: absolute;
+                width: 20%;
+                bottom: 43%;
+            }
+
+            i {
+                display: none;
+            }
+
+            span {
+                font-size: 16px !important;
+            }
+        }
+    }
+
+    .user {
+        font-size: 20px !important;
+    }
+
+    .warning {
+        left: 90% !important;
+        font-size: 20px !important;
+    }
+
+    .lock {
+        font-size: 20px !important;
+    }
+
+    .code {
+        padding: 0.3rem 0.4rem 0.3rem 2.8rem !important;
+    }
+
+    form {
+        input {
+            padding: 0.3rem 2rem !important;
+        }
+
+        img {
+            width: 50px;
+        }
+
+        a {
+            font-size: 13px !important;
+            width: 55% !important;
+            left: 55% !important;
+            top: 113% !important;
+        }
+
+        button {
+            width: 180px !important;
+            margin-top: 1rem !important;
+            margin-left: 2.2rem !important;
+
+            i {
+                top: 33% !important;
+                left: 80% !important;
+            }
+        }
+    }
+}

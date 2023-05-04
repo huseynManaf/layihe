@@ -1,0 +1,514 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cards {
+  isolation: isolate;
+}
+.cards p {
+  margin-bottom: 30px;
+  color: #FF6400;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 32px;
+  margin-left: 26px;
+}
+.cards .UCard {
+  background: #fafafa;
+  border-radius: 10px;
+  padding: 50px 65px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 28px;
+}
+.cards .UCard .UCard-img {
+  float: left;
+  width: 33.33333333%;
+}
+.cards .UCard .UCard-img img {
+  width: 315px;
+  box-shadow: -15px 15px 30px 0 rgba(0, 0, 0, 0.24);
+  padding: 0;
+  border-radius: 15px;
+}
+.cards .UCard .UCard-text {
+  float: left;
+  width: 66.66666667%;
+}
+.cards .UCard .UCard-text .UCard-text-header {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+.cards .UCard .UCard-text .UCard-text-header .UCard-head {
+  font-family: CocoSharp, Arial;
+  font-weight: 800;
+  font-size: 24px;
+  color: #000;
+  line-height: 30px;
+}
+.cards .UCard .UCard-text .UCard-text-header .UCard-btn a {
+  display: inline-block;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 14px;
+  background: #ff6400;
+  border-radius: 25px;
+  box-shadow: 0 10px 10px -10px rgba(255, 107, 0, 0.51);
+  color: #fff;
+  font-weight: 600;
+  position: absolute;
+  top: 39%;
+  left: 80%;
+}
+.cards .UCard .UCard-text .UCard-text-header .UCard-btn a span {
+  margin-left: 10px;
+  height: 19px;
+  line-height: 19px;
+}
+.cards .UCard .UCard-text .UCard-text-header .UCard-btn a span i {
+  color: #fff;
+  font-size: 18px;
+}
+.cards .UCard .UCard-text .UCard-desc {
+  font-family: CocoSharp, Arial;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: #000;
+  margin-bottom: 25px;
+}
+.cards .UCard .UCard-text .UCard-advs {
+  display: flex;
+  padding: 0;
+}
+.cards .UCard .UCard-text .UCard-advs .UCard-adv {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 33.3333333333%;
+  text-align: center;
+  padding: 0;
+}
+.cards .UCard .UCard-text .UCard-advs .UCard-adv .icon {
+  font-size: 35px;
+  line-height: 65px;
+  margin-right: 10px;
+}
+.cards .UCard .UCard-text .UCard-advs .UCard-adv .icon i {
+  font-size: 34px;
+  color: #ff6b00;
+}
+.cards .UCard .UCard-text .UCard-advs .UCard-adv .value {
+  font-family: CocoSharp, Arial;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: normal;
+  color: #000;
+  text-align: left;
+}
+
+.visa-card {
+  width: 50%;
+  padding: 0 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 45px 65px;
+  border-radius: 10px;
+  background: #FAFAFA;
+  margin-top: 30px;
+}
+.visa-card .visa-price span {
+  font-size: 20px;
+}
+.visa-card .visa-card-img img {
+  width: 315px;
+  float: left;
+  border-radius: 15px;
+}
+.visa-card .visa-text {
+  width: 100%;
+  margin-top: 40px;
+}
+.visa-card .visa-text .visa-header {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: normal;
+  margin-bottom: 10px;
+  color: #000;
+  font-family: CocoSharp, Arial;
+}
+.visa-card .visa-text .visa-desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  margin-bottom: 25px;
+  height: 75px;
+  color: #000;
+  font-family: CocoSharp, Arial;
+  width: 86%;
+}
+.visa-card .visa-text .visa-btn a {
+  display: inline-block;
+  padding: 14px 30px;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 14px;
+  background: #ff6400 !important;
+  border-radius: 25px;
+  color: #fff;
+  font-weight: 600;
+}
+.visa-card .visa-text .visa-btn a span {
+  margin-left: 10px;
+}
+.visa-card .visa-text .visa-btn a span i {
+  color: #fff;
+  font-size: 16px;
+  background-color: #FF6400 !important;
+}
+.visa-card .visa-text .visa-btn #partner {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #969696;
+  padding: 16px 25px;
+  font-size: 14px;
+  background-color: #FAFAFA !important;
+  line-height: 16px;
+  font-family: CocoSharp, Arial;
+  font-weight: 600;
+  border-radius: 25px;
+  margin-left: 16px;
+}
+
+#menu {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  #menu {
+    display: block;
+  }
+  .menubar.open {
+    display: block;
+    text-align: center;
+  }
+  .menubar.open .all-menu {
+    margin-top: 20px;
+  }
+  .menubar.open .all-menu .headd #own {
+    border: 1px solid #FF6400;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #FF6400;
+    padding: 10px 20px;
+  }
+  .menubar.open .all-menu .headd #biznes {
+    border: 1px solid transparent;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    font-size: 12px;
+    color: grey;
+    padding: 10px 20px;
+  }
+  .menubar.open .all-menu .linkss {
+    display: block;
+    margin-top: 30px;
+  }
+  .menubar.open .all-menu .linkss #black {
+    display: block;
+    font-size: 20px;
+    color: black;
+    margin-top: 10px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+  }
+  .menubar.open .all-menu .linkss #grey {
+    padding: 12px 0;
+    font-size: 14px;
+    color: grey;
+    display: block;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+  }
+  .menubar.open .all-menu .bottoom #bulb {
+    border: 1px solid #323232;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #323232;
+    color: white;
+  }
+  .menubar.open .all-menu .bottoom a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    color: #323232;
+    padding: 5px 10px;
+  }
+  .menubar.open .all-menu .bottoom #engg {
+    margin-left: 10px;
+  }
+  .menubar.open .all-menu .bottoom #searchh {
+    width: 35px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    margin-left: 10px;
+  }
+  #shopping {
+    position: absolute;
+    bottom: 13px;
+  }
+  #shopping span {
+    display: inline-block;
+  }
+  header .left #media-menu {
+    position: absolute;
+    top: 6%;
+    display: block;
+    margin-left: -60px;
+    font-size: 20px;
+  }
+  header .left img {
+    margin-top: 20px;
+    margin-left: 120px;
+  }
+  .bottomheader .menubar-tools #media-phone {
+    margin-bottom: 20px;
+  }
+  .visa-text {
+    text-align: center;
+  }
+  .footer .footer-socnets {
+    position: absolute;
+    top: 0%;
+  }
+  .footer .footer-end .footer-partners {
+    position: absolute;
+    top: 75%;
+  }
+  .footer .footer-end .footer-endleft {
+    position: absolute;
+    top: 120%;
+  }
+  .visa-card .visa-text .visa-desc {
+    width: 110%;
+  }
+  .visa-card #end-card {
+    margin-top: 20px;
+  }
+  .cards p {
+    font-size: 22px !important;
+    margin-top: 40px;
+    line-height: 0;
+  }
+  .UCard {
+    height: 80vh;
+  }
+  .UCard .UCard-img img {
+    height: 30vh;
+    margin-left: 6px;
+  }
+  .UCard .UCard-btn {
+    position: absolute;
+    top: 97%;
+    left: 40%;
+  }
+  .UCard .UCard-btn a span {
+    display: none;
+  }
+  .UCard .UCard-head {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    font-size: 18px !important;
+  }
+  .UCard .UCard-desc {
+    position: absolute;
+    top: 70%;
+    text-align: center;
+    left: 10%;
+  }
+  .UCard .UCard-adv .icon {
+    position: absolute;
+    top: 80%;
+    margin: 0 -40px;
+    padding: 0 -20px;
+  }
+  .UCard .UCard-adv .icon #onee {
+    position: absolute;
+    left: -60px;
+    top: 15px;
+  }
+  .UCard .UCard-adv .icon #threee {
+    position: absolute;
+    left: 57px;
+    top: 15px;
+  }
+  .UCard .UCard-adv #onee {
+    position: absolute;
+    top: 88%;
+    text-align: center;
+    left: 80px;
+    font-weight: 200;
+  }
+  .UCard .UCard-adv #twoo {
+    position: absolute;
+    top: 88%;
+    text-align: center;
+    left: 215px;
+    font-weight: 200;
+  }
+  .UCard .UCard-adv #threee {
+    position: absolute;
+    top: 88%;
+    text-align: center;
+    left: 350px;
+    font-weight: 200;
+  }
+}
+.chat {
+  cursor: pointer;
+  position: absolute;
+  top: 86%;
+  right: 3%;
+}
+.chat i {
+  border: 20px solid transparent;
+  border-radius: 100%;
+  color: #FF6400;
+  font-size: 35px;
+  background-color: transparent;
+}
+
+.body-header i {
+  border: 20px solid #FF6400;
+  color: white;
+  background-color: #FF6400;
+  border-radius: 100%;
+  font-size: 20px;
+  margin-left: 80px;
+}
+
+.chat {
+  position: fixed;
+  z-index: 10000000;
+}
+
+.chatpage-body {
+  margin-left: 50px;
+  padding: 26px 0;
+  width: 80%;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-clip-path: polygon(0 10%, 100% 10%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 10%, 100% 10%, 100% 100%, 0% 100%);
+}
+.chatpage-body h2 {
+  font-size: 14px;
+  width: 88%;
+  margin-left: 18px;
+  margin-top: 10px;
+  color: #969696;
+  font-weight: 300;
+}
+
+.body-header span i {
+  margin-top: -30px;
+}
+
+.chat-page {
+  position: relative;
+}
+.chat-page .chatpage {
+  position: absolute;
+  top: -20%;
+}
+.chat-page .fixed {
+  position: fixed;
+  z-index: 200000000000;
+  margin-left: 72%;
+  border: 1px solid grey;
+  border-radius: 10px;
+  background-color: aliceblue;
+}
+.chat-page .fixed .chatpage-head {
+  margin-left: 40px;
+}
+.chat-page .fixed .chatpage-head #minus {
+  cursor: pointer;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.chat-page .fixed .button {
+  padding: 55px 0;
+}
+.chat-page .fixed .inputt {
+  margin: 40px 0;
+}
+.chat-page .fixed .inputt span {
+  margin-left: 18px;
+  color: #ACB3B8;
+}
+.chat-page .fixed .inputt span i {
+  font-size: 10px;
+  color: #FF6400;
+}
+.chat-page .fixed .inputt #inp1 {
+  position: absolute;
+  top: 41%;
+  left: 13%;
+  padding: 2px 40px;
+  border-radius: 7px;
+  margin-left: 18px;
+}
+.chat-page .fixed .inputt #inp2 {
+  position: absolute;
+  top: 52%;
+  left: 13%;
+  padding: 2px 40px;
+  border-radius: 7px;
+  margin-left: 18px;
+}
+.chat-page .fixed .inputt #inp3 {
+  position: absolute;
+  top: 62%;
+  left: 13%;
+  padding: 2px 40px;
+  margin-left: 18px;
+  border-radius: 7px;
+}
+.chat-page .fixed .inputt #inp4 {
+  position: absolute;
+  top: 72%;
+  left: 13%;
+  padding: 2px 40px;
+  border-radius: 7px;
+  margin-left: 18px;
+}
+.chat-page .button {
+  position: relative;
+}
+.chat-page .button button {
+  position: absolute;
+  top: 260%;
+  background-color: #FF6400;
+  border: 1px solid #FF6400;
+  color: white;
+  font-size: 0.875rem;
+  padding: 12px 60px;
+  border-radius: 6px;
+  margin-left: 90px;
+  margin-top: -280px !important;
+}
+.chat-page .chatpage {
+  display: none;
+}/*# sourceMappingURL=card.css.map */

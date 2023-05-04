@@ -1,0 +1,516 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.active {
+  position: relative;
+  border: 2px solid #FF6400 !important;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  border-radius: 25px;
+  color: #FF6400 !important;
+  text-decoration: none;
+  margin-right: 5px;
+  margin-left: 5px;
+  display: inline-block;
+  padding: 16px 40px;
+  line-height: 14px;
+  font-size: 14px;
+}
+.active::after {
+  position: absolute;
+  bottom: -4px;
+  transform: rotateZ(-45deg) translate(-50%);
+  width: 16px;
+  height: 16px;
+  border-left: 2px solid #FF6400;
+  border-bottom: 2px solid #FF6400;
+  content: "";
+  left: 50%;
+  background: #fff;
+}
+
+.videobar {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.videobar .videobar-overlay {
+  background-image: url(https://unibank.az/uploads/menus/o_1cnj0q0r11k96193k1rgp1tp1icca.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  width: 100%;
+  display: table;
+}
+.videobar .videobar-overlay .videobar-w {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.videobar .videobar-overlay .videobar-w #player .videobar-icon {
+  font-size: 65px;
+  line-height: 65px;
+  color: #fff;
+  font-family: icomoon !important;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+.content {
+  width: 98%;
+  margin-left: 11px;
+}
+
+.card4 {
+  margin-bottom: 30px;
+  padding: 0 15px;
+  background: #FAFAFA;
+  border-radius: 10px;
+  padding: 45px 50px;
+  position: relative;
+  transition: all 0.2s linear;
+  height: 100%;
+  text-align: center;
+}
+.card4 .card-icon {
+  font-size: 65px;
+  line-height: 65px;
+  margin-bottom: 10px;
+  color: #FF6400;
+}
+.card4 .body-head {
+  font-family: CocoSharp, Arial;
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+  line-height: normal;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.card4 .card-desc {
+  font-family: CocoSharp, Arial;
+  font-weight: 300;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  overflow: hidden;
+}
+.card4:hover {
+  background-color: #FF6400;
+}
+.card4:hover .card-icon {
+  color: white;
+}
+.card4:hover .body-head {
+  color: white;
+}
+.card4:hover .card-desc {
+  color: white;
+}
+
+.ceos {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.ceos .ceos-item {
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 45px 65px;
+  border-radius: 10px;
+  background-color: #fafafa;
+  margin-bottom: 0;
+}
+.ceos .ceos-item .ceos-img {
+  width: 105px;
+  height: 105px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.ceos .ceos-item .ceos-img img {
+  width: 106px;
+  height: 106px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.ceos .ceos-item .management-name {
+  font-family: CocoSharp, Arial;
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+.ceos .ceos-item .management-position {
+  font-family: CocoSharp, Arial;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: normal;
+}
+.ceos .ceos-item .text-ceo {
+  font-family: CocoSharp, Arial;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  line-height: 1.43;
+  margin-top: 15px;
+}
+
+.content {
+  background: #FAFAFA;
+  margin-top: 30px;
+  border-radius: 10px;
+  position: relative;
+}
+.content .content-wrapper {
+  padding: 45px 65px;
+}
+.content .content-wrapper .text h1 {
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 800;
+  color: #FF6400 !important;
+  margin: 0;
+  padding: 0;
+}
+.content .content-wrapper .about-text {
+  font-family: CocoSharp, Arial;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  margin-top: 15px;
+  line-height: 1.43;
+}
+
+.card5 {
+  text-align: center;
+  padding: 0 15px;
+}
+.card5 .card-item {
+  padding: 35px 45px;
+  height: 200px;
+  border-radius: 10px;
+  background: #FF6400;
+}
+.card5 .card-item .item-icon {
+  font-size: 52px;
+  line-height: 52px;
+  margin-bottom: 15px;
+  color: white;
+}
+.card5 .card-item .item-caption {
+  width: 110%;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.43;
+  font-weight: 700;
+}
+
+.content-wrapper {
+  margin-top: 50px;
+}
+.content-wrapper .heading {
+  margin-bottom: 20px;
+  color: #FF6400 !important;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+}
+.content-wrapper .card6 {
+  margin-top: 20px;
+  margin-left: -28px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.content-wrapper .card6 .caption {
+  line-height: 20px;
+  font-family: CocoSharp, Arial;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.content-wrapper .card6 .desc {
+  font-family: CocoSharp, Arial;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  line-height: 23px;
+}
+
+#media-menuu {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .left img {
+    margin-left: 100px;
+    margin-top: -20px;
+  }
+  .card4 {
+    margin-left: -117px;
+    width: 128%;
+    gap: 10px;
+  }
+  .card4 .card-icon {
+    position: absolute;
+    font-size: 35px;
+    top: 20%;
+  }
+  .card4 .card-body .body-head {
+    font-size: 14px !important;
+    position: absolute;
+    left: 23%;
+    top: 10%;
+  }
+  .card4 .card-body .card-desc {
+    font-size: 12px;
+    position: absolute;
+    width: 59%;
+    text-align: left;
+    top: 44%;
+    left: 23%;
+    line-height: 13px;
+  }
+  .videobar {
+    margin-left: -100px;
+    width: 120%;
+  }
+  .videobar #player {
+    font-size: 56px;
+  }
+  .ceos {
+    margin-left: -120px;
+    width: 140%;
+  }
+  .ceos .management-name {
+    font-size: 14px !important;
+    font-weight: 700;
+  }
+  .ceos .management-position {
+    font-size: 10px !important;
+  }
+  .ceos .text-ceo p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .content {
+    background-color: transparent;
+  }
+  #about {
+    margin-left: -140px;
+    width: 140%;
+  }
+  #about div {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  #about .text h1 {
+    font-size: 20px;
+  }
+  .card5 {
+    margin-left: -120px;
+  }
+  .card5 .card-item {
+    display: flex;
+    align-items: center;
+    height: 85px;
+    margin-top: 20px;
+  }
+  .card5 .card-item i {
+    font-size: 34px;
+  }
+  .card5 .item-caption {
+    font-size: 14px;
+    margin-top: -5px;
+    text-align: left;
+    margin-left: 30px;
+  }
+  #five {
+    margin-top: -90px;
+  }
+  .heading {
+    font-size: 20px !important;
+  }
+  .caption {
+    line-height: 14px;
+    font-weight: 700;
+    font-size: 14px !important;
+  }
+  .desc {
+    font-weight: 400;
+    font-size: 12px !important;
+    line-height: 14px !important;
+    width: 109%;
+  }
+  .footer .footer-socnets {
+    position: absolute;
+    top: 0% !important;
+    left: -22% !important;
+  }
+  .footer .footer-end .footer-partners {
+    position: absolute;
+    top: 75% !important;
+  }
+  .footer .footer-end .footer-endleft {
+    position: absolute;
+    top: 120% !important;
+  }
+}
+.chat {
+  cursor: pointer;
+  position: absolute;
+  top: 86%;
+  right: 3%;
+}
+.chat i {
+  border: 20px solid transparent;
+  border-radius: 100%;
+  color: #FF6400;
+  font-size: 35px;
+  background-color: transparent;
+}
+
+.body-header i {
+  border: 20px solid #FF6400;
+  color: white;
+  background-color: #FF6400;
+  border-radius: 100%;
+  font-size: 20px;
+  margin-left: 80px;
+}
+
+.chat {
+  position: fixed;
+  z-index: 10000000;
+}
+
+.chatpage-body {
+  margin-left: 50px;
+  padding: 26px 0;
+  width: 80%;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-clip-path: polygon(0 10%, 100% 10%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 10%, 100% 10%, 100% 100%, 0% 100%);
+}
+.chatpage-body h2 {
+  font-size: 14px;
+  width: 88%;
+  margin-left: 18px;
+  margin-top: 10px;
+  color: #969696;
+  font-weight: 300;
+}
+
+.body-header span i {
+  margin-top: -30px;
+}
+
+.chat-page {
+  position: relative;
+}
+.chat-page .chatpage {
+  position: absolute;
+  top: -20%;
+}
+.chat-page .fixed {
+  position: fixed;
+  z-index: 200000000000;
+  margin-left: 72%;
+  border: 1px solid grey;
+  border-radius: 10px;
+  background-color: aliceblue;
+}
+.chat-page .fixed .chatpage-head {
+  margin-left: 40px;
+}
+.chat-page .fixed .chatpage-head #minus {
+  cursor: pointer;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.chat-page .fixed .button {
+  padding: 55px 0;
+}
+.chat-page .fixed .inputt {
+  margin: 40px 0;
+}
+.chat-page .fixed .inputt span {
+  margin-left: 18px;
+  color: #ACB3B8;
+}
+.chat-page .fixed .inputt span i {
+  font-size: 10px;
+  color: #FF6400;
+}
+.chat-page .fixed .inputt #inp1 {
+  position: absolute;
+  top: 41%;
+  left: 13%;
+  padding: 2px 40px;
+  border-radius: 7px;
+  margin-left: 18px;
+}
+.chat-page .fixed .inputt #inp2 {
+  position: absolute;
+  top: 52%;
+  left: 13%;
+  padding: 2px 40px;
+  border-radius: 7px;
+  margin-left: 18px;
+}
+.chat-page .fixed .inputt #inp3 {
+  position: absolute;
+  top: 62%;
+  left: 13%;
+  padding: 2px 40px;
+  margin-left: 18px;
+  border-radius: 7px;
+}
+.chat-page .fixed .inputt #inp4 {
+  position: absolute;
+  top: 72%;
+  left: 13%;
+  padding: 2px 40px;
+  border-radius: 7px;
+  margin-left: 18px;
+}
+.chat-page .button {
+  position: relative;
+}
+.chat-page .button button {
+  position: absolute;
+  top: 260%;
+  background-color: #FF6400;
+  border: 1px solid #FF6400;
+  color: white;
+  font-size: 0.875rem;
+  padding: 12px 60px;
+  border-radius: 6px;
+  margin-left: 90px;
+  margin-top: -280px !important;
+}
+.chat-page .chatpage {
+  display: none;
+}/*# sourceMappingURL=resources.css.map */

@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/bootstrap.css">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/cards.css">
+    <link rel="stylesheet" href="/assets/style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+
+
+        <nav id="nav">
+            <div class="container pt-3 pb-2" id="ct">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-8 ">
+                        <div class="nav-left">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-lg-1">
+                                    <div class="imgbox">
+                                        <img src="https://unibank.az/assets/images/logonew-orange1.png" alt="" id="img">
+
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-11">
+                                    <div class="text">
+                                        <a href="">Xidmət Şəbəkəsi</a>
+                                        <a href=""> Bank haqqında</a>
+                                        <a href=""> Keşbek </a>
+                                        <a href=""> Tariflər </a>
+                                        <a href="">İnsan Resursları</a>
+                                        <a href="">Bankla əlaqədər və təkliflər</a>
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="nav-right">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="ferdi" id="ferdi">
+                                    <span class="word">Fərdi</span>
+                                </div>
+                                <div class="biznes" id="biznes">
+                                    <span class="word2">Biznes</span>
+
+                                </div>
+
+                                <div class="darkmode" id="darkmode">
+                                    <input type="checkbox" class="checkbox" id="checkbox">
+                                    <label for="checkbox" class="checkbox-label">
+                                        <i class="fas fa-sun" onclick="light()"></i>
+                                        <i class="fas fa-moon" id="moon" onclick="dark()"></i>
+                                        <span class="ball"></span>
+                                    </label>
+                                </div>
+                                <div class="translate">
+                                    <span>ENG</span>
+                                </div>
+                                <div class="translate2" id="translate2">
+                                    <span>RUS</span>
+                                </div>
+                                    <div class="search">
+                                    <a href="/html/basket.html">  <i class="fa-solid fa-basket-shopping" ></i></a>
+                                    
+                                    </div>
+                                <span id="count">0</span>
+
+
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="nav2">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-lg-9">
+                            <div class="nav2left" id="nav2left">
+                                <a href="/cards.html">Kartlar</a>
+                                <a href=""> Kreditler</a>
+                                <a href=""> Əmanətlər</a>
+                                <a href="">Köçürmələr</a>
+                                <a href="">Rəqamsal bankçılıq</a>
+                                <a href=""> Əlavə Xidmətlər</a>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="nav2right position-relative">
+
+                                <div class="phone" id="phone">
+                                    <i class="fa-sharp fa-solid fa-phone" style="color: #ff6600;"></i>
+                                    <a href="tel:117">117</a>
+                                </div>
+                                <div class="bankciliq" id="bankciliq">
+                                    <i class="fa-solid fa-arrow-right-long" style="color: #ffae00;"></i>
+                                    <a href="">İnternet bankçılıq</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+    <main>
+        <div class="sidebar position-relative" id="sidebarmobile">
+
+            <div class="sidebar" id="mySidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <div id="slidebtn"><a href="#" id="ferdi">Fərdi</a></div>
+                <div class="sidebtn"><a href="#" id="biznes">Biznes</a></div>
+
+                <a href="" class="all" id="all" style="margin-top: 20
+                px;">Kartlar</a>
+                <a href="" class="all" id="all"> Kreditler</a>
+                <a href="" class="all" id="all"> Əmanətlər</a>
+                <a href="" class="all" id="all">Köçürmələr</a>
+                <a href="" class="all" id="all">Rəqamsal bankçılıq</a>
+                <a href="" class="all" id="all"> Əlavə Xidmətlər</a>
+                <a href="" class="all fs-6">Xidmət Şəbəkəsi</a>
+                <a href="" class="all fs-6">Bank haqqında</a>
+                <a href="" class="all fs-6">Keşbek</a>
+                <a href="" class="all fs-6">Tariflər</a>
+                <a href="" class="all fs-6">İnsan Resursları</a>
+                <a href="" class="all fs-6">Bankla əlaqə və təkliflər</a>
+
+            </div>
+
+            <div class="openbutton">
+                <button class="openbtn" onclick="openNav()"><span>☰</span></button>
+            </div>
+
+        </div>
+
+        <section id="kartlar">
+            <div class="container">
+                <h2>Kartlar</h2>
+            </div>
+            <div class="container" id="headercard">
+
+                <div class="allcarddiv">
+
+                    <div class="ucard">
+                        <img src="https://unibank.az/uploads/items/o_1g04kl6mn107c1a6lc6btp4pfda.gif" alt="">
+                    </div>
+                    <div class="cardname">
+                        <h3>UCard</h3>
+                        <p>UCard - kredit və multivalyutalı debet kartını özündə birləşdirən tək kartdır.</p>
+                        <div class="carddetails">
+                            <div class="multivalyutalicard">
+                                <i class="fa-solid fa-message" style="color: #ff6400;"></i>
+                                <p>
+                                    Multivalyutalı
+                                    tək kart</p>
+
+                            </div>
+                            <div class="faizsizcard">
+                                <i class="fa-regular fa-hourglass" style="color: #ff6400;"></i>
+                                <p>
+                                    40 günədək
+                                    faizsiz kredit</p>
+                            </div>
+                            <div class="cashback">
+                                <i class="fa-solid fa-circle-info" style="color: #ff6400;"></i>
+                                <p> 30%-dək
+                                    keşbek </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="etrafli">
+                        <a href="https://unibank.az/az/cards/view/1998">Ətraflı<i class="fa-solid fa-arrow-right-long"
+                                style="color: #ffffff;"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <div class="sidebar position-relative" id="sidebarmobile">
+
+            <div class="sidebar" id="mySidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <div id="slidebtn"><a href="#" id="ferdi">Fərdi</a></div>
+                <div class="sidebtn"><a href="#" id="biznes">Biznes</a></div>
+
+                <a href="" class="all" id="all" style="margin-top: 30
+                px;">Kartlar</a>
+                <a href="" class="all" id="all"> Kreditler</a>
+                <a href="" class="all" id="all"> Əmanətlər</a>
+                <a href="" class="all" id="all">Köçürmələr</a>
+                <a href="" class="all" id="all">Rəqamsal bankçılıq</a>
+                <a href="" class="all" id="all"> Əlavə Xidmətlər</a>
+                <a href="" class="all fs-6">Xidmət Şəbəkəsi</a>
+                <a href="" class="all fs-6">Bank haqqında</a>
+                <a href="" class="all fs-6">Keşbek</a>
+                <a href="" class="all fs-6">Tariflər</a>
+                <a href="" class="all fs-6">İnsan Resursları</a>
+                <a href="" class="all fs-6">Bankla əlaqə və təkliflər</a>
+
+            </div>
+
+
+
+        </div>
+
+        <section id="debetkartlar">
+
+            <div class="container">
+                <h2>Debet kartlar</h2>
+                <div class="row">
+                    <div class="col-lg-5-5" >
+                        <div class="visaplatinium" id="1">
+                            <div class="visaplatiniumimg">
+                                <img src="https://unibank.az/uploads/items/o_1fvf8egoctbh2n41il1sbd1crdi.jpg" alt="">
+                            </div>
+                            <h3>Visa Platinium</h3>
+                            <p>Bu kartla hər zaman və hər yerdə yüksək statusunu vurğula! Böyük imkanlar vədd edən kartı
+                                həyatının əvəzolunmaz bir hissəsinə çevir.</p>
+                                <span>20 AZN</span>
+                            <div class="buybtn">
+                                <button id="buybtn">
+                                    Sifariş et!
+                                </button>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-5-5" >
+                        <div class="visaplatinium" id="2">
+                            <div class="visaplatiniumimg">
+                                <img src="https://unibank.az/uploads/items/o_1fdhl5q9u2if7531bln1o1f68a.jpg" alt="">
+                            </div>
+                            <h3>Visa Infinite
+                            </h3>
+                            <p>Bu kartın sahibi olaraq, hər yerdə ən yaxşı xidmət və eksklüziv imkanlar səni gözləyir.
+                                Visa növündə olan bu kartdan olduqca fərqli faydalan.</p>
+                                <span>20 AZN</span>
+                            <div class="buybtn">
+                                <button id="buybtn">
+                                    Sifariş et!
+                                </button>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-5-5" >
+                        <div class="visaplatinium" id="3">
+                            <div class="visaplatiniumimg">
+                                <img src="https://unibank.az/uploads/items/o_1fl3rf8fd1cfrl7d10js1vg81jd4a.jpg" alt="">
+                            </div>
+                            <h3>Unimiles
+                            </h3>
+                            <p>Uçuşa hazır ol! UniMiles kartı ilə nağdsız ödənişlər et, millər topla və milləri
+                                istənilən hava yollarının aviabiletinə dəyiş.</p>
+                                <span>20 AZN</span>
+                            <div class="buybtn">
+                                <button id="buybtn">
+                                    Sifariş et!
+                                </button>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-5-5" >
+                        <div class="visaplatinium" id="4">
+                            <div class="visaplatiniumimg">
+                                <img src="https://unibank.az/uploads/items/o_1eqk202no1jcg2j11qivr8javla.jpg" alt="">
+                            </div>
+                            <h4 id="black">Mastercard Black Edition</h4>
+                            <p>Bu kartı əldə etməklə geniş səyahət, sığorta və xidmət imkanlarına malik olursan. Sənin
+                                yüksək statusunu MasterCard-ın ən nüfuzlu kartlarından biri vurğulayır!</p>
+                                <span>20 AZN</span>
+                            <div class="buybtn">
+                                <button id="buybtn">
+                                    Sifariş et!
+                                </button>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-5-5" >
+                        <div class="visaplatinium" id="5">
+                            <div class="visaplatiniumimg">
+                                <img src="https://unibank.az/uploads/items/o_1eqk20gao1app1l531oa285ffdta.jpg" alt="">
+                            </div>
+                            <h4 id="black">Mastercard World Elite
+                            </h4>
+                            <p>Dünyanın istənilən yerində eksklüziv imkanlar və yüksək xidmət səni gözləyir! Arzularını
+                                bu karta həvalə et!</p>
+                                <span>20 AZN</span>
+                            <div class="buybtn">
+                                <button id="buybtn">
+                                    Sifariş et!
+                                </button>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+            </div>
+            </div>
+
+
+        </section>
+        <section id="diger">
+            <div class="container">
+                <p id="first">Digər</p>
+                <div class="row">
+                    <div class="col-lg-5-5" >
+                        <div class="visaplatinium" id="6">
+                            <div class="visaplatiniumimg">
+                                <img src="https://unibank.az/uploads/items/o_1ghgjt81a1i0rnkomn1vmh1iuda.gif" alt="">
+                            </div>
+                            <h4 id="black">Albalı Debet</h4>
+                            <p>Bu kartla dünyanın hər bir nöqtəsində rahat alış-veriş, onlayn ödənişlər et və ya rahat
+                                nağd pul çıxar.</p>
+                                <span>20 AZN</span>
+                            <div class="buybtn">
+                                <button id="buybtn">
+                                    Sifariş et!
+                                </button>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-5-5" >
+                        <div class="visaplatinium" id="7">
+                            <div class="visaplatiniumimg">
+                                <img src="https://unibank.az/uploads/items/o_1g5lkqkchjtp1ejd1tbn1igf17c8a.jpg" alt="">
+                            </div>
+                            <h4 id="black">Albalı</h4>
+                            <p>Albalı - 4 bank məhsulunu (kredit, taksit kartı, depozit və debet kartı) özündə
+                                birləşdirən beynəlxalq kartdır.</p>
+                                <span>40 AZN</span>
+                            <div class="buybtn">
+                                <button id="buybtn">
+                                    Sifariş et!
+                                </button>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-5-5" >
+                        <div class="visaplatinium" id="8">
+                            <div class="visaplatiniumimg">
+                                <img src="https://unibank.az/uploads/items/o_1geemnr0j10bv12dqj8r6f016qea.gif" alt="">
+                            </div>
+                            <h4 id="black">UCard Gift</h4>
+                            <p>UCard Gift-ən çox arzulanan hədiyyə! UCard Gift kartını hədiyyə et!
+                                <p>
+                                    <span>50 AZN</span>
+                            <div class="buybtn">
+                                <button id="buybtn">
+                                    Sifariş et!
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-5-5" id="9">
+                        <div class="visaplatinium" id="9">
+                            <div class="visaplatiniumimg">
+                                <img src="https://unibank.az/uploads/items/o_1g4runv8p1phn1o0p1f1ager1niia.jpg" alt="">
+                            </div>
+                            <h4 id="black">Digital card</h4>
+                            <p>Artıq kart sifarişi üçün banka gəlməyə ehtiyac yoxdur. Bu kart ilə hesab açmadan
+                                UBank-da, müxtəlif İnternet saytlarda bütün ödənişlərini rahatlıqla edə bilərsən.</p>
+                                <span>100 AZN</span>
+                            <div class="buybtn">
+                                <button id="buybtn">
+                                    Sifariş et!
+                                </button>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <section id="footer1">
+            <div class="container" id="part1">
+                <div class="footer1 d-flex align-items-baseline justify-content-between">
+
+                    <div class="kartlar">
+                        <p><a href="" class="first">Kartlar</a></p>
+                        <p><a href="" class="second">Kartlar</a></p>
+                        <p><a href="" class="second">Debet kartlar</a></p>
+                        <p><a href="" class="second">Digər</a></p>
+
+                    </div>
+                    <div class="kartlar2">
+                        <p><a href="" class="first">Kreditlər</a></p>
+                        <p><a href="" class="second">Nağd</a></p>
+                        <p><a href="" class="second">Mikro</a></p>
+                        <p><a href="" class="second">İpoteka</a></p>
+
+                    </div>
+                    <div class="kartlar3">
+                        <p><a href="" class="first">Əmanətlər</a></p>
+                        <p><a href="" class="second">Müddətli</a></p>
+                        <p><a href="" class="second">Proqressiv</a></p>
+                        <p><a href="" class="second">Yığım</a></p>
+                        <p><a href="" class="second">Faizlər əvvəlcədən</a></p>
+                        <p><a href="" class="second">Topla</a></p>
+
+                    </div>
+                    <div class="kartlar4">
+                        <p><a href="" class="first">Köçürmələr</a></p>
+                        <p><a href="" class="second">Ölkəxarici</a></p>
+                        <p><a href="" class="second">Ölkədaxili</a></p>
+
+                    </div>
+                    <div class="kartlar5">
+                        <p><a href="" class="first">Rəqəmsal bankçılıq</a></p>
+                        <p><a href="" class="second">UBank</a></p>
+                        <p><a href="" class="second">İnternet bankçılıq</a></p>
+                        <p><a href="" class="second">Şəxsi kabinet</a></p>
+                        <p><a href="" class="second">Unimiles şəxsi kabinet</a></p>
+                        <p><a href="" class="second">Onlayn kredit ödənişi</a></p>
+                        <p><a href="" class="second">Onlayn kredit müraciəti</a></p>
+
+                    </div>
+                    <div class="kartlar6">
+                        <p><a href="" class="first">Əlavə xidmətlər</a></p>
+                        <p><a href="" class="second">Hesablaşma-kassa xidməti</a></p>
+                        <p><a href="" class="second">POS terminal / Smart kassa</a></p>
+                        <p><a href="" class="second">Depozit qutuları</p>
+                        <p><a href="" class="second">Onlayn ticarət (eCommerce)</a></p>
+
+                    </div>
+                    <div class="kartlar7">
+                        <p><a href="" class="first">Bank haqqında</a></p>
+                        <p><a href="" class="second">Rəhbərlik</a></p>
+                        <p><a href="" class="second">Müxbir hesablar</a></p>
+                        <p><a href="" class="second">Təklif və Şikayətlər</a></p>
+                        <p><a href="" class="second">İnsan resursları</a></p>
+                        <p><a href="" class="second">Hesabatlar</a></p>
+                        <p><a href="" class="second">Digər sənədlər
+                            </a></p>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="container">
+                <div class="icons d-flex ">
+                    <div class="iconapple">
+                        <a href="https://apps.apple.com/ru/app/unibank-mobile/id1073632425"> <i
+                                class="fa-brands fa-apple" style="color: #ffffff;"></i></a>
+
+                    </div>
+                    <div class="iconandroid">
+                        <a href="https://play.google.com/store/apps/details?id=az.unibank.mbanking">
+                            <i class="fa-brands fa-android" style="color: #ffffff;"></i>
+                        </a>
+
+                    </div>
+                    <div class="iconfacebook">
+                        <a href="https://www.facebook.com/unibank.az/"><i class="fa-brands fa-facebook-f"
+                                style="color: #ffffff;"></i></a>
+                    </div>
+                    <div class="icontwitter">
+                        <a href="https://twitter.com/unibank"><i class="fa-brands fa-twitter"
+                                style="color: #ffffff;"></i></a>
+                    </div>
+                    <div class="iconlinkedin">
+                        <a href="https://www.linkedin.com/company/unibankazerbaijan/"><i
+                                class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i></a>
+                    </div>
+                    <div class="iconyoutube">
+                        <a href="https://www.youtube.com/c/UnibankAze"><i class="fa-brands fa-youtube"
+                                style="color: #ffffff;"></i></a>
+                    </div>
+                    <div class="iconinstagram">
+                        <a href="https://www.instagram.com/unibank.az/"><i class="fa-brands fa-instagram"
+                                style="color: #ffffff;"></i></a>
+                    </div>
+                    <div class="icontelegram">
+                        <a href="https://t.me/UnibankAZ">
+                            <a href=""><i class="fa-brands fa-telegram" style="color: #ffffff;"></i></a>
+                        </a>
+                    </div>
+
+                </div>
+                <hr class="hr">
+            </div>
+
+
+        </section>
+        <section id="footer2">
+            <div class="container " id="footer">
+
+                <div class="footerleft">
+                    <p>© 2023, Unibank - Sənin Bankın</p>
+                    <p>Unibank Azərbaycan Respublikası Mərkəzi Bankının 73 saylı 14 dekabr 2010-cu il tarixli
+                        lisenziyası
+                        əsasında fəaliyyət göstərir.
+                        Bütün hüquqlar qorunur.</p>
+                </div>
+                <div class="footerimg">
+                    <div class="sigorta">
+                        <a href="" id="sigorta">
+                            <img src="https://unibank.az/assets/images/adif.png" id="1" alt="">
+                        </a>
+                    </div>
+                    <div class="elektron">
+                        <a href="" id="">
+                            <img src="data:image/png;base64,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"
+                                alt="" id="2">
+                        </a>
+
+
+                    </div>
+                    <div class="infobank">
+                        <a href="" id="infobank">
+                            <img src="https://unibank.az/assets/images/infobank.png?v4" alt="" id="3">
+                        </a>
+                    </div>
+                    <div class="maliyye">
+                        <a href="" id="maliyye">
+                            <img src="https://unibank.az/assets/images/msp.png?v5" id="4" alt="">
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="/assets/js/cardindex.js"></script>
+    <script src="/assets/js/app.js"></script>
+    <script src="/assets/js/basket.js"></script>
+</body>
+
+</html>

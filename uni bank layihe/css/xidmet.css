@@ -1,0 +1,420 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #ff6400 !important;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 800;
+  font-family: CocoSharp, Arial;
+  margin-left: 28px;
+  margin-top: 20px;
+}
+
+.bottomheader {
+  width: 92%;
+  margin-left: 50px;
+}
+
+.sibling-links {
+  margin: 10px 0 15px;
+  margin-left: 25px;
+}
+.sibling-links .sibling-item {
+  line-height: 14px;
+  font-size: 14px;
+  color: #a1a1a1;
+  text-decoration: none;
+  margin-right: 5px;
+  margin-left: 5px;
+  display: inline-block;
+  padding: 16px 40px;
+  border-radius: 25px;
+  border: 2px solid #969696;
+}
+
+.active {
+  position: relative;
+  border: 2px solid #FF6400 !important;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  border-radius: 25px;
+  color: #FF6400 !important;
+  text-decoration: none;
+  margin-right: 5px;
+  margin-left: 5px;
+  display: inline-block;
+  padding: 16px 40px;
+  line-height: 14px;
+  font-size: 14px;
+}
+.active::after {
+  position: absolute;
+  bottom: -4px;
+  transform: rotateZ(-45deg) translate(-50%);
+  width: 16px;
+  height: 16px;
+  border-left: 2px solid #FF6400;
+  border-bottom: 2px solid #FF6400;
+  content: "";
+  left: 50%;
+  background: #fff;
+}
+
+.map iframe {
+  margin-left: 40px;
+  margin-top: -60px;
+  width: 96%;
+  height: 70vh;
+  -webkit-clip-path: polygon(0 12%, 100% 12%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 12%, 100% 12%, 100% 100%, 0% 100%);
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+section {
+  width: 85%;
+  margin-left: 107px;
+}
+
+.content {
+  border-radius: 10px;
+  position: relative;
+  transition: background 0.1s linear;
+  cursor: pointer;
+}
+.content .content-wrapper {
+  color: #000;
+  line-height: 33px;
+  margin-bottom: 15px;
+}
+.content .content-wrapper .loc-item {
+  width: 100%;
+  display: flex;
+  padding: 35px 65px;
+  background: #fafafa;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.content .content-wrapper .loc-item:hover {
+  background-color: #FF6400;
+  transition: 0.3s;
+}
+.content .content-wrapper .loc-item:hover .loc-icon:hover {
+  color: white;
+}
+.content .content-wrapper .loc-item:hover .loc-name .text-head {
+  font-weight: 700;
+  line-height: 20px;
+  font-size: 20px;
+}
+.content .content-wrapper .loc-item:hover .loc-name .text-bottom {
+  font-size: 14px;
+  line-height: 21px;
+}
+.content .content-wrapper .loc-item:hover .loc-other {
+  color: white;
+}
+.content .content-wrapper .loc-item:hover .text-head {
+  color: white;
+}
+.content .content-wrapper .loc-item:hover .text-bottom {
+  color: white;
+}
+.content .content-wrapper .loc-item:hover span i {
+  color: white;
+}
+.content .content-wrapper .loc-item .loc-icon {
+  color: #FF6400;
+  font-size: 33px;
+  margin-right: 22px;
+}
+.content .content-wrapper .loc-item .loc-name {
+  display: table-cell;
+  line-height: 20px;
+  font-weight: 400;
+  font-size: 20px;
+  vertical-align: top;
+  width: 40%;
+  color: #000;
+  font-family: CocoSharp, Arial;
+}
+.content .content-wrapper .loc-item .loc-name .text-head {
+  font-weight: 700;
+  line-height: 20px;
+  font-size: 20px;
+}
+.content .content-wrapper .loc-item .loc-name .text-bottom {
+  font-size: 14px;
+  line-height: 21px;
+}
+.content .content-wrapper .loc-item .loc-other {
+  display: flex;
+  align-items: center;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 16px;
+  width: 30%;
+  color: #000;
+}
+
+.content-dark {
+  font-family: CocoSharp, Arial;
+  font-weight: 400;
+  line-height: 16px;
+  background: #FF6400;
+  padding: 7px 65px;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 10px;
+}
+.content-dark .iconn {
+  float: left;
+  background-position: -341px -218px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+.content-dark .text {
+  line-height: 18px;
+  font-family: CocoSharp, Arial;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+}
+.content-dark .text p {
+  margin-top: 20px;
+}
+
+#menu {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .content-wrapper {
+    margin-left: -99px;
+    width: 120%;
+    margin-top: 20px;
+  }
+  .content-wrapper .loc-item {
+    height: 20vh;
+  }
+  .content-wrapper .loc-name .text-head {
+    margin-left: -30px;
+    font-size: 14px !important;
+    width: 154%;
+    margin-top: -15px;
+  }
+  .content-wrapper .loc-name .text-bottom {
+    margin-left: -30px;
+    font-size: 12px !important;
+    width: 164%;
+  }
+  .content-wrapper .loc-icon span i {
+    font-size: 20px !important;
+    margin-top: 100px;
+  }
+  .content-wrapper .loc-icon span #icon-one {
+    position: absolute;
+    top: 0%;
+    left: -18%;
+  }
+  .content-wrapper .loc-icon span #icon-two {
+    margin-left: -50px;
+    margin-bottom: 35px;
+  }
+  .content-dark {
+    padding: 10px 40px;
+    margin-left: -97px;
+    margin-top: 17px;
+    width: 120%;
+  }
+  .content-dark .text p {
+    margin-top: 20px;
+    margin-left: 80px;
+    width: 93%;
+  }
+  .loc-other #bazar {
+    position: absolute;
+    left: -7%;
+    top: 47%;
+    width: 40%;
+    font-size: 12px;
+  }
+  .loc-other #fiziki {
+    position: absolute;
+    width: 50%;
+    left: 45%;
+    top: 60%;
+    width: 45%;
+    font-size: 12px;
+  }
+  section h1 {
+    font-size: 22px;
+    margin-left: -80px;
+  }
+  section .sibling-links {
+    outline-style: none;
+    margin-left: -80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    overflow-x: auto;
+  }
+  section .sibling-links .sibling-item {
+    padding: 10px 20px;
+    white-space: nowrap;
+  }
+  section .sibling-links .sibling-item a {
+    width: 150%;
+    font-size: 12px;
+  }
+  ::-webkit-scrollbar {
+    outline: none;
+  }
+  .map {
+    width: 115%;
+    margin-left: -120px;
+  }
+}
+.chat {
+  cursor: pointer;
+  position: absolute;
+  top: 86%;
+  right: 3%;
+}
+.chat i {
+  border: 20px solid transparent;
+  border-radius: 100%;
+  color: #FF6400;
+  font-size: 35px;
+  background-color: transparent;
+}
+
+.body-header i {
+  border: 20px solid #FF6400;
+  color: white;
+  background-color: #FF6400;
+  border-radius: 100%;
+  font-size: 20px;
+  margin-left: 80px;
+}
+
+.chat {
+  position: fixed;
+  z-index: 10000000;
+}
+
+.chatpage-body {
+  margin-left: 50px;
+  padding: 26px 0;
+  width: 80%;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-clip-path: polygon(0 10%, 100% 10%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 10%, 100% 10%, 100% 100%, 0% 100%);
+}
+.chatpage-body h2 {
+  font-size: 14px;
+  width: 88%;
+  margin-left: 18px;
+  margin-top: 10px;
+  color: #969696;
+  font-weight: 300;
+}
+
+.body-header span i {
+  margin-top: -30px;
+}
+
+.chat-page {
+  position: relative;
+}
+.chat-page .chatpage {
+  position: absolute;
+  top: -20%;
+}
+.chat-page .fixed {
+  position: fixed;
+  z-index: 200000000000;
+  margin-left: 72%;
+  border: 1px solid grey;
+  border-radius: 10px;
+  background-color: aliceblue;
+}
+.chat-page .fixed .chatpage-head {
+  margin-left: 40px;
+}
+.chat-page .fixed .chatpage-head #minus {
+  cursor: pointer;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.chat-page .fixed .button {
+  padding: 55px 0;
+}
+.chat-page .fixed .inputt {
+  margin: 40px 0;
+}
+.chat-page .fixed .inputt span {
+  margin-left: 18px;
+  color: #ACB3B8;
+}
+.chat-page .fixed .inputt span i {
+  font-size: 10px;
+  color: #FF6400;
+}
+.chat-page .fixed .inputt #inp1 {
+  position: absolute;
+  top: 41%;
+  left: 13%;
+  padding: 2px 40px;
+  border-radius: 7px;
+  margin-left: 18px;
+}
+.chat-page .fixed .inputt #inp2 {
+  position: absolute;
+  top: 52%;
+  left: 13%;
+  padding: 2px 40px;
+  border-radius: 7px;
+  margin-left: 18px;
+}
+.chat-page .fixed .inputt #inp3 {
+  position: absolute;
+  top: 62%;
+  left: 13%;
+  padding: 2px 40px;
+  margin-left: 18px;
+  border-radius: 7px;
+}
+.chat-page .fixed .inputt #inp4 {
+  position: absolute;
+  top: 72%;
+  left: 13%;
+  padding: 2px 40px;
+  border-radius: 7px;
+  margin-left: 18px;
+}
+.chat-page .button {
+  position: relative;
+}
+.chat-page .button button {
+  position: absolute;
+  top: 260%;
+  background-color: #FF6400;
+  border: 1px solid #FF6400;
+  color: white;
+  font-size: 0.875rem;
+  padding: 12px 60px;
+  border-radius: 6px;
+  margin-left: 90px;
+  margin-top: -280px !important;
+}
+.chat-page .chatpage {
+  display: none;
+}/*# sourceMappingURL=xidmet.css.map */

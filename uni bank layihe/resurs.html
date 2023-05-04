@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/bootstrap.css">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/insanresurslari.css">
+    <link rel="stylesheet" href="/assets/cards.css">
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="/assets/xidmetstyle.css">
+
+    <title>Document</title>
+    <script src="https://cdn.maptiler.com/maptiler-sdk-js/latest/maptiler-sdk.umd.min.js"></script>
+    <link href="https://cdn.maptiler.com/maptiler-sdk-js/latest/maptiler-sdk.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+
+
+        <nav id="nav">
+            <div class="container pt-3 pb-2" id="ct">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-8 ">
+                        <div class="nav-left">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-lg-1">
+                                    <div class="imgbox">
+                                        <a href="/html/index.html"><img
+                                                src="https://unibank.az/assets/images/logonew-orange1.png" alt=""
+                                                id="img"></a>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-11">
+                                    <div class="text">
+                                        <a href="">Xidmət Şəbəkəsi</a>
+                                        <a href=""> Bank haqqında</a>
+                                        <a href=""> Keşbek </a>
+                                        <a href=""> Tariflər </a>
+                                        <a href="/html/insanresurslari.html">İnsan Resursları</a>
+                                        <a href="">Bankla əlaqədər və təkliflər</a>
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="nav-right">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="ferdi" id="ferdi">
+                                    <span class="word">Fərdi</span>
+                                </div>
+                                <div class="biznes" id="biznes">
+                                    <span class="word2">Biznes</span>
+
+                                </div>
+
+                                <div class="darkmode" id="darkmode">
+                                    <input type="checkbox" class="checkbox" id="checkbox">
+                                    <label for="checkbox" class="checkbox-label">
+                                        <i class="fas fa-sun" onclick="light()"></i>
+                                        <i class="fas fa-moon" id="moon" onclick="dark()"></i>
+                                        <span class="ball"></span>
+                                    </label>
+                                </div>
+                                <div class="translate">
+                                    <span>ENG</span>
+                                </div>
+                                <div class="translate2" id="translate2">
+                                    <span>RUS</span>
+                                </div>
+                                <div class="search">
+                                    <i class="fa-solid fa-magnifying-glass fa-rotate-90 fa-xs"
+                                        style="color: #8e8f90;"></i>
+                                </div>
+
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="nav2">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-lg-9">
+                            <div class="nav2left" id="nav2left">
+                                <a href="/cards.html">Kartlar</a>
+                                <a href=""> Kreditler</a>
+                                <a href=""> Əmanətlər</a>
+                                <a href="">Köçürmələr</a>
+                                <a href="">Rəqamsal bankçılıq</a>
+                                <a href=""> Əlavə Xidmətlər</a>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="nav2right position-relative">
+
+                                <div class="phone" id="phone">
+                                    <i class="fa-sharp fa-solid fa-phone" style="color: #ff6600;"></i>
+                                    <a href="tel:117">117</a>
+                                </div>
+                                <div class="bankciliq" id="bankciliq">
+                                    <i class="fa-solid fa-arrow-right-long" style="color: #ffae00;"></i>
+                                    <a href="">İnternet bankçılıq</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+    <main>
+        <div class="sidebar position-relative" id="sidebarmobile">
+
+            <div class="sidebar" id="mySidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <div id="slidebtn"><a href="#" id="ferdi">Fərdi</a></div>
+                <div class="sidebtn"><a href="#" id="biznes">Biznes</a></div>
+
+                <a href="" class="all" id="all" style="margin-top: 20
+                px;">Kartlar</a>
+                <a href="" class="all" id="all"> Kreditler</a>
+                <a href="" class="all" id="all"> Əmanətlər</a>
+                <a href="" class="all" id="all">Köçürmələr</a>
+                <a href="" class="all" id="all">Rəqamsal bankçılıq</a>
+                <a href="" class="all" id="all"> Əlavə Xidmətlər</a>
+                <a href="/xidmetSebekesi.html" class="all fs-6">Xidmət Şəbəkəsi</a>
+                <a href="" class="all fs-6">Bank haqqında</a>
+                <a href="" class="all fs-6">Keşbek</a>
+                <a href="" class="all fs-6">Tariflər</a>
+                <a href="" class="all fs-6">İnsan Resursları</a>
+                <a href="" class="all fs-6">Bankla əlaqə və təkliflər</a>
+
+            </div>
+
+            <div class="openbutton1">
+                <button class="openbtn" onclick="openNav()"><span>☰</span></button>
+            </div>
+
+        </div>
+        <section id="ibuttons">
+            <div class="container">
+                <h3>İnsan resursları</h3>
+                <div class="allbuttons">
+                    <button class="active"><a href="">Ümumi məlumat</a></button>
+                    <button ><a href="">Vakansiyalar</a></button>
+                    <button ><a href="">Ünibankda çalışmaq</a></button>
+                    <button ><a href=""> İşə qəbul prosesi</a></button>
+                    <button ><a href=""> Təlim və inkişaf</a></button>
+                </div>
+                <div class="videodiv">
+                    <i class="fa-regular fa-circle-play" style="color: #ffffff;" id="playicon"></i>
+                    <iframe id="iframeunibank" src="https://www.youtube.com/embed/ricGtmUDcLU"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+
+        </section>
+        <section id="bankabout">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <i class="fa-solid fa-message"></i>
+                            <p>Vakansiyalar</p>
+                            <p>
+                                Unibankda 50-dən çox karyera istiqaməti mövcuddur. Hazırda mövcud vakansiyalar barədə
+                                ətraflı məlumat əldə edin. </p>
+
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <i class="fa-solid fa-people-group"></i>
+                            <p>Unibankda çalışmaq</p>
+                            <p id="karyera">
+
+                                Ölkənin ən nüfuzlu şirkətlərindən birində çalışmaq, öz karyera arzularını reallaşdırmaq
+                                istəyirsənsə - Unibank məhz sənin bankındır! Gələcək inkişafını Unibankla başla! </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>İşə qəbul prosesi</p>
+                            <p id="muraciet">
+
+                                Müraciət etdiyiniz vakansiyadan asılı olaraq işə qəbul prosesimiz fərqlənə bilər. Test
+                                mərhələsində sizi nələr gözlədiyini və müsahibələrdə hansı məqamlara diqqət yetirməli
+                                olduğunuzu öyrənin. </p>
+
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <i class="fa-solid fa-book-open"></i>
+                            <p>Təlim və inkişaf</p>
+                            <p id="telim">
+
+                                Karyera və iş həyatınız boyu Təlim və İnkişaf Mərkəzi əsas dostunuz və yol yoldaşınız
+                                olacaq! </p>
+
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <p> Təcrübə proqramları </p>
+                            <p id="muraciet">
+
+                                Təcrübə proqramları müxtəlif istiqamətlərdə və müxtəlif müddətlərdə olur. Təcrübə
+                                müddəti maksimal olaraq 3 ay ərzində keçirilir. </p>
+
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <i class="fa-solid fa-signs-post"></i>
+                            <p>
+                                İstiqamətlər </p>
+                            <p id="muraciet">
+
+                                Karyeranızı məhz bank sektorunda qurmaq istəyir, öz gücünüzə və potensialınıza
+                                inanırsınızsa, Unibank Sizi öz karyera seçiminizi etməyə dəvət edir. </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </section>
+        <section id="msurasi">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5-5" id="personabout">
+                        <div class="col-lg-4">
+                            <div class="img">
+                                <img src="https://unibank.az/uploads/articles/o_1d0juoufe1dl214ssvb01ijbvjua.jpg"
+                                    alt="">
+
+                            </div>
+                        </div>
+                        <div class="name">
+                            <h5>Eldar Qəribov</h5>
+                            <p>Müşahidə Şurasının sədri</p>
+                            <p id="about">Unibankda gənc mütəxəssislərin özlərini reallaşdırmaları, peşə vərdişlərini, ixtisaslarını artırmaları üçün hər cür şərait yaradılıb. İllər boyu Unibank minlərlə əməkdaşın təkcə iş yeri deyil, həm də onların Məktəbi və İnkişaf Mərkəzi olub. Məhz biz səhmdarlar üçün şirkətin əsas dəyəri onun İnsan Kapitalı, Komandasıdır.</p>
+
+                        </div>
+
+                    </div>
+                    <div class="col-lg-5-5" id="personabout">
+                        <div class="col-lg-4">
+                            <div class="img">
+                                <img src="https://unibank.az/uploads/articles/o_1d0juqc4l1vakbauvj3k1a3r0a.jpg"
+                                    alt="">
+
+                            </div>
+                        </div>
+                        <div class="name">
+                            <h5>Faiq Hüseynov</h5>
+                            <p>Müşahidə Şurası sədrinin müavini</p>
+                            <p id="about2">Unibank həmişə gənc mütəxəssislər üçün uğurlu karyera ünvanı, inkişaf məkanı olub. Fəaliyyət göstərdiyi 30 ildən artıq dövrdə Unibank məktəbində yetişmiş minlərlə kadr, bu gün bank sektorunun uğurlu, bacarıqlı mütəxəssisləridir. Bankın işçi heyətinin davamlı inkişafı, komanda ruhunun gücləndirilməsi rəhbərlik üçün hər zaman prioritet vəzifələrdən biridir.</p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/assets/js/insanresurslari.js"></script>
+    <script src="/assets/js/xidmetsebekesi.js"></script>
+    <script src="/assets/js/app.js"></script>
+    <script src="/assets/js/cardindex.js"></script>
+
+</body>
+
+</html>
